@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+section {
+  height: 100dvh;
+  background: #0f0529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.content-corversor {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #520380;
+  margin: 10px;
+  height: 50%;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.content-corversor select {
+  width: 100%;
+  height: 6vh;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.content-corversor select:focus {
+  outline: 0;
+  border: none;
+}
+
+.content-corversor input[type="number"] {
+  width: 100%;
+  height: 6vh;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.content-corversor input[type="number"]:focus {
+  outline: 0;
+  border: none;
+}
+
+.content-corversor input[type="button"] {
+  width: 100%;
+  height: 6vh;
+  cursor: pointer;
+  background: #11001c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.content-corversor input[type="button"]:hover {
+  background: #1e0252;
+}
+
+.content-mostrar {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #3a025b;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.content-mostrar input {
+  width: 100%;
+  height: 10vh;
+  padding: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  .content-corversor {
+    width: 90%;
+  }
+
+  .content-mostrar {
+    width: 90%;
+  }
+}

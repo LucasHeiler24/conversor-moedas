@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="content-corversor">
+                <h1>Converter moeda</h1>
+                <h3>Selecione a moeda</h3>
+                <select id="inMoedas">
+                    <option value="-1">Selecione a moeda</option>
+                    <option value="2">Bitcoin</option>
+                    <option value="1">Euro</option>
+                    <option value="0">Dólar</option>
+                </select>
+                <input type="number" id="inValor" placeholder="Informe o valor a ser convertido">
+                <input type="button" id="inConverter" value="Converter">
+            </div>
+            <div class="content-mostrar">
+                <h1>Valor convertido</h1>
+                <input type="text" id="inMostrar" value="R$0,00" disabled>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/js.js"></script>
+</html>
